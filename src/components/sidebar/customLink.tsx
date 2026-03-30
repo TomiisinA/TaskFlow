@@ -10,10 +10,18 @@ export const CustomLink = ({
   label: string;
 }) => {
   return (
-    <div>
+    <div className="flex items-center gap-3">
       <NavLink
         to={path}
-        className={({ isActive }) => (isActive ? "active" : "")}
+        className={({ isActive }) =>
+          `flex items-center gap-3 px-3 py-2 rounded-md text-lg
+         transition
+         ${
+           isActive
+             ? "text-primary text-lg  bg-primary-100"
+             : "text-black-100  hover:text-primary  "
+         }`
+        }
       >
         <span>{icon}</span>
         <span>{label}</span>

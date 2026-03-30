@@ -1,31 +1,28 @@
-
 import { Icon } from "@iconify/react";
-import { NavLink } from "react-router";
+
 import { CustomLink } from "./customLink";
 
 const Sidebar = () => {
   return (
-    <aside className="w-60 min-h-screen bg-white flex flex-col px-6 py-8">
+    <aside className="w-60 min-h-screen bg-white flex flex-col px-6 py-8 rounded-md ">
       {/* Logo */}
-      <div className="flex items-center gap-2 mb-10">
-        <NavLink to="/"></NavLink>
-      </div>
 
+      <div>
+        <p className="font-bold mb-3 text-lg"> Menu</p>
+      </div>
       {/* Navigation */}
-      <nav className="space-y-4 text-base font-primary text-black-100">
+      <nav className="space-y-4  font-primary text-black-100">
         <CustomLink
-          icon={
-            <Icon icon="teenyicons:wallet-outline" width="24" height="24" />
-          }
+          icon={<Icon icon="mage:dashboard" width="24" height="24" />}
           label="Dashboard"
-          path="/dashboard"
+          path="/"
         />
         <CustomLink
           icon={
-            <Icon icon="teenyicons:wallet-outline" width="24" height="24" />
+            <Icon icon="fluent:tasks-app-24-regular" width="24" height="24" />
           }
-          label="My Wallet"
-          path="/my-wallet"
+          label="Tasks"
+          path="/tasks"
         />
         <CustomLink
           icon={
@@ -35,20 +32,38 @@ const Sidebar = () => {
               height="24"
             />
           }
-          label="MoneyBag Plans"
-          path="/moneybag-plans"
+          label="Projects"
+          path="/projects"
         />
         <CustomLink
-          icon={
-            <Icon
-              icon="heroicons-outline:document-report"
-              width="24"
-              height="24"
-            />
-          }
-          label="Transactions"
-          path="/transactions"
+          icon={<Icon icon="tdesign:chart-analytics" width="24" height="24" />}
+          label="Analytics"
+          path="/analytics"
         />
+
+        <CustomLink
+          icon={
+            <Icon icon="icon-park-outline:calendar" width="24" height="24" />
+          }
+          label="Calendar"
+          path="/calendar"
+        />
+        <CustomLink
+          icon={<Icon icon="fluent-mdl2:group" width="24" height="24" />}
+          label="Team Members"
+          path="/team-members"
+        />
+        <CustomLink
+          icon={<Icon icon="lsicon:report-outline" width="24" height="24" />}
+          label="Reports"
+          path="/reports"
+        />
+      </nav>
+
+      {/* Help Center Card */}
+      <div className="pt-7">
+        <p className="font-bold mb-1 text-lg">General</p>
+
         <CustomLink
           icon={
             <Icon icon="fluent:settings-16-regular" width="24" height="24" />
@@ -56,28 +71,26 @@ const Sidebar = () => {
           label="Settings"
           path="/settings"
         />
-      </nav>
 
-      {/* Push content down */}
-      <div className="grow" />
+        <CustomLink
+          icon={
+            <Icon
+              icon="material-symbols:help-outline-rounded"
+              width="24"
+              height="24"
+            />
+          }
+          label="Help Center"
+          path="/help-center"
+        />
 
-      {/* Help Center Card */}
-      <div className="bg-primary-500 text-white rounded-xl p-4 mb-6 text-sm">
-        <p className="font-semibold mb-1">Help Center</p>
-        <p className="text-xs opacity-90">
-          To ensure timely and efficient support services.
-        </p>
-
-        <p className="mt-3 text-xs border bg-white rounded-sm p-2 ">
-          Call: <span className="font-medium text-primary-500">0800000000</span>
-        </p>
+        <button className="flex items-center gap-3 px-3 text-lg hover:text-red-500">
+          <Icon icon="ant-design:logout-outlined" width="24" height="24" />
+          Log Out
+        </button>
       </div>
 
       {/* Logout */}
-      <button className="flex items-center gap-3 text-sm text-gray-500 hover:text-red-500">
-        <Icon icon="mdi-light:logout" width="24" height="24" />
-        Log Out
-      </button>
     </aside>
   );
 };
