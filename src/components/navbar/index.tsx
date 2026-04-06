@@ -18,18 +18,27 @@ export const Navbar = () => {
               />
             </NavLink>
           </div>
-          <div className="bg-white flex justify-between col-span-10 rounded-md px-3 pt-2 ">
+          <div className="bg-white flex justify-between  items-center col-span-10 rounded-md px-3 pt-2 ">
             <div>
               <p className="text-xl font-extrabold">Welcome Back, Be! </p>
               <p className="">Here is what is happening with your team today</p>
             </div>
             <div>
               <div className="flex">
-                <div>
+                <div className="flex border rounded-lg  bg-white ">
+                  <div>
+                    {" "}
+                    <Icon
+                      icon="iconamoon:search-thin"
+                      width="24"
+                      height="24"
+                      className="pt-3"
+                    />
+                  </div>
                   <input
                     type="text"
-                    placeholder="Search here"
-                    className="border rounded-md 3  bg-white p-2 text-sm "
+                    placeholder="Search here.."
+                    className="p-2 text-sm "
                   />
                 </div>
                 <div>
@@ -38,15 +47,15 @@ export const Navbar = () => {
                   </p>
                 </div>
                 <div>
-                  <p className="ml-2 border text-xl text-primary  font-extrabold bg-primary-100 rounded-lg bg-primary-300 p-1">
-                Be
+                  <p className="ml-2 border text-lg text-primary  font-extrabold bg-primary-100 rounded-lg bg-primary-300 p-1">
+                    Be
                   </p>
                 </div>
                 <div className="px-1">
-                  <p className="text-lg font-extrabold">
-                  Be Constancy <br />
-                    {/* tomisinbaby@gmail.com  */}
-                  </p>
+                  <p className="text-lg font-extrabold">Be Constancy</p>
+                  {/* <span className="text-sm font-light mt-0 pt-0">
+                    tomisinbaby@gmail.com
+                  </span> */}
                 </div>
               </div>
             </div>
@@ -55,4 +64,4 @@ export const Navbar = () => {
       </div>
     </div>
   );
-}
+};

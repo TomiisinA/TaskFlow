@@ -76,6 +76,8 @@
 
 html {
   scroll-behavior: smooth;
+    height: 100%;
+
 
 
 }
@@ -83,4 +85,6 @@ html {
 
 body {
   font-family: var(--font-family);
+    height: 100%;
+
 }

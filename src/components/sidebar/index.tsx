@@ -4,7 +4,7 @@ import { CustomLink } from "./customLink";
 
 const Sidebar = () => {
   return (
-    <aside className="w-60 min-h-screen bg-white flex flex-col px-6 py-8 rounded-md ">
+    <aside className="w-60 min-h-screen bg-white flex flex-col px-6 py-8 rounded-md relative ">
       {/* Logo */}
 
       <div>

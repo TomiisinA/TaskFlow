@@ -8,13 +8,13 @@ export const DashboardLayout = () => {
   return (
     <div className="p-3 bg-primary-100">
       <div>
-      <Navbar/>
+        <Navbar />
       </div>
-      <div className="flex">
-        <div className="">
+      <div className=" flex ">
+        <div className="h-screen ">
           <Sidebar />
         </div>
-        <div className="grow bg-violet-50 min-h-screen p-6">
+        <div className="grow bg-violet-50 min-h-screen pl-6 ">
           <Outlet />
         </div>
       </div>

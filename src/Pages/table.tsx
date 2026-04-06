@@ -52,7 +52,7 @@ export const Table = ({ search = "" }) => {
 
       <table className="w-full table-auto border-collapse bg-white rounded-lg  p-6">
         <thead>
-          <tr className="text-left text-sm  ">
+          <tr className="text-left text-sm bg-primary-100 ">
             <th className="p-3  ">Name</th>
             <th className="p-  ">Active Work</th>
             <th className="p-3  ">Overdue</th>

@@ -19,8 +19,10 @@ export default function TeamActivity() {
     <div className=" p-4 ">
       <div className="flex justify-between items-start mb-4">
         <div>
-          <p className="text-xl font-semibold ">Team Activity</p>
-          <p className="text-sm font-light">Understand your team productive and workload</p>
+          <p className="text-xl font-extrabold">Team Activity</p>
+          <p className="text-sm font-light">
+            Understand your team productive and workload
+          </p>
         </div>
         <div className=" ">
           <Icon icon="majesticons:more-menu-vertical" width="24" height="24" />

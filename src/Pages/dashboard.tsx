@@ -22,7 +22,7 @@ export const Card = ({
 
 export const Dashboard = () => {
   return (
-    <div>
+    <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <div className="lg:col-span-9">
           <div className="  bg-white rounded-lg p-4 grid grid-cols-4 gap-6">
@@ -55,8 +55,10 @@ export const Dashboard = () => {
         <div className="lg:col-span-3 bg-white rounded-lg p-4 shadow-sm">
           <div className="flex justify-between">
             <div>
-              <p>Task Priority</p>
-              <p>Distribution by priorty level</p>
+              <p className="text-xl font-extrabold">Task Priority</p>
+              <p className="text-sm font-light">
+                Distribution by priorty level
+              </p>
             </div>
             <div className=" ">
               <Icon
@@ -76,7 +78,7 @@ export const Dashboard = () => {
           <TeamActivity />
         </div>
         <div className="bg-white rounded-lg h-auto w-auto lg:col-span-8 p-4 shadow-sm">
-          <Table/>
+          <Table />
         </div>
       </div>
     </div>
